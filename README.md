@@ -20,11 +20,23 @@ Run npm run start:dev to start the NestJS API server. The API will be available 
 ##  Features
 
 To Do List Management: Users can create, edit, and delete tasks for specific days. Each date can have its own to-do list.
+
+
 Date and Time Integration: Tasks are organized by date, allowing users to schedule tasks for specific days and time intervals.
+
+
 Progress Tracking: The app shows a progress bar indicating the percentage of completed tasks for each day.
+
+
 Task Completion: Users can mark tasks as "in-progress" or "done", and the progress bar updates accordingly.
+
+
 Date Validation: Prevents creating a new to-do list for a date that already exists. If a duplicate date is entered, an error message is displayed using PrimeNG's dialog component.
+
+
 User-Friendly Interface: Clean, responsive, and intuitive UI using PrimeNG components for better user experience.
+
+
 CRUD Operations: Full support for Create, Read, Update operations for tasks and dates, making task management seamless.
 
 ## Further help
