@@ -2,32 +2,26 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
 
+This project is a To-Do List application built using Angular. It allows users to manage tasks by adding, editing, and marking tasks as complete, along with various time and date functionalities.
+
+## Project Overview
+
+This application is built with Angular (version 16.2.16), making use of modern front-end development techniques such as two-way binding, reusable components. It interacts with the back-end API to perform CRUD operations on tasks.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+##  Features
+ToDoList Management: Add a new List for A specific Day , add and manage tasks
+Date and Time Integration: Schedule tasks with specific dates and time intervals.
+Progress Tracking: Track task completion with progress bars based on dates.
+User-Friendly Interface: Designed with a clean and responsive interface.
+Validation: Prevents duplicate entries of dates and tasks.
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-<p align="center">
-  <a href="https://drive.google.com/file/d/1FR4exdwxNflc6MKKL_BSpCAu6W8QIFoR/view?usp=sharing" target="blank"><img src="https://drive.google.com/file/d/1FR4exdwxNflc6MKKL_BSpCAu6W8QIFoR/view?usp=sharing" width="120" alt="Interface" /></a>
-</p>
+![Interface Preview](https://drive.google.com/uc?export=view&id=1FR4exdwxNflc6MKKL_BSpCAu6W8QIFoR)
+
