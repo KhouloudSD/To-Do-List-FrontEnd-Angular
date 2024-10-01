@@ -1,23 +1,31 @@
-# ToDoListFrontEnd
+# To Do List Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
-
-This project is a To-Do List application built using Angular. It allows users to manage tasks by adding, editing, and marking tasks as complete, along with various time and date functionalities.
+This project is a full-stack To-Do List application developed using **NestJS**, **Angular**, and **MongoDB**. It allows users to manage their daily tasks efficiently, with features such as task creation, scheduling, progress tracking, and more. The front end is built using **Angular** (version 16.2.16) and **PrimeNG** (version 16.9.1), while the back end is powered by **NestJS** and a **MongoDB** database for persistent data storage.
 
 ## Project Overview
 
-This application is built with Angular (version 16.2.16), making use of modern front-end development techniques such as two-way binding, reusable components. It interacts with the back-end API to perform CRUD operations on tasks.
+This application enables users to create, view, update, and delete tasks. The tasks are organized by dates, allowing users to schedule their to-do lists efficiently. Key functionalities include task progress tracking, date validation to prevent duplicate entries, and user-friendly forms to manage tasks.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Front-End (Angular):
+
+Run `ng serve` to start the development server. Navigate to http://localhost:4200/ to see the application.
+The application will automatically reload if you make any changes to the source files.
+
+Back-End (NestJS):
+
+Run npm run start:dev to start the NestJS API server. The API will be available at http://localhost:3000/.
 
 ##  Features
-ToDoList Management: Add a new List for A specific Day , add and manage tasks
-Date and Time Integration: Schedule tasks with specific dates and time intervals.
-Progress Tracking: Track task completion with progress bars based on dates.
-User-Friendly Interface: Designed with a clean and responsive interface.
-Validation: Prevents duplicate entries of dates and tasks.
+
+To Do List Management: Users can create, edit, and delete tasks for specific days. Each date can have its own to-do list.
+Date and Time Integration: Tasks are organized by date, allowing users to schedule tasks for specific days and time intervals.
+Progress Tracking: The app shows a progress bar indicating the percentage of completed tasks for each day.
+Task Completion: Users can mark tasks as "in-progress" or "done", and the progress bar updates accordingly.
+Date Validation: Prevents creating a new to-do list for a date that already exists. If a duplicate date is entered, an error message is displayed using PrimeNG's dialog component.
+User-Friendly Interface: Clean, responsive, and intuitive UI using PrimeNG components for better user experience.
+CRUD Operations: Full support for Create, Read, Update operations for tasks and dates, making task management seamless.
 
 ## Further help
 
