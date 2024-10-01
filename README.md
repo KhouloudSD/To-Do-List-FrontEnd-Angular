@@ -28,8 +28,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-
-
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="[https://nestjs.com/img/logo-small.svg](https://drive.google.com/file/d/1FR4exdwxNflc6MKKL_BSpCAu6W8QIFoR/view?usp=sharing)" width="120" alt="Nest Logo" /></a>
+  <a href="https://drive.google.com/file/d/1FR4exdwxNflc6MKKL_BSpCAu6W8QIFoR/view?usp=sharing" target="blank"><img src="https://drive.google.com/file/d/1FR4exdwxNflc6MKKL_BSpCAu6W8QIFoR/view?usp=sharing" width="120" alt="Interface" /></a>
 </p>
