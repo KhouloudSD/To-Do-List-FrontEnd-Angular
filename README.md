@@ -31,5 +31,5 @@ CRUD Operations: Full support for Create, Read, Update operations for tasks and 
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-![Interface Preview](https://drive.google.com/uc?export=view&id=1FR4exdwxNflc6MKKL_BSpCAu6W8QIFoR)
+![Interface Preview](https://drive.google.com/file/d/1xaQyv_uBq9IPV3-U2TDfXcCvV8HRf4Oe/view?usp=sharing)
 
