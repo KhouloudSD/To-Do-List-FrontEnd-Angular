@@ -1,0 +1,44 @@
+<div class="grid full-page">
+    <div class="col-12">
+        <div class="header-row">
+          <h2 class="task-title1">Things To Do In : {{ selectedDate?.date | date:'yyyy-MM-dd' }}</h2>
+
+          <div class="task-inputs">
+            <div class="p-field">
+              <label for="taskTitle" class="task-label">New Task Title</label>
+              <input pInputText id="taskTitle" [(ngModel)]="newTaskTitle" placeholder="Enter new task title" />
+            </div>
+  
+            <div class="p-field">
+              <label for="taskInterval" class="task-label">Time Interval</label>
+              <p-inputMask 
+                id="taskInterval" 
+                mask="99:99 -- 99:99" 
+                placeholder="Enter time interval (e.g., '10:00 - 11:00')" 
+                [(ngModel)]="newTaskInterval">
+              </p-inputMask>
+            </div>
+  
+            <!-- Button to add a new task -->
+            <div class="p-field">
+              <button pButton type="button" label="Add Task" icon="pi pi-plus" (click)="addTask()"></button>
+            </div>
+          </div>
+        </div>
+  
+        <ul class="task-list">
+          <li *ngFor="let task of tasks" [ngClass]="{ 'completed': task.status === 'done' }" class="task-item">
+            <button 
+              pButton 
+              type="button" 
+              [icon]="task.status === 'done' ? 'pi pi-check' : 'pi pi-undo'" 
+              (click)="toggleTaskStatus(task._id)">
+            </button>
+            
+            <span class="task-title">{{ task.title }}</span>
+            <span *ngIf="task.timeInterval" class="time-interval"> (Interval: {{ task.timeInterval }})</span>
+          </li>
+        </ul>
+    </div>
+  </div>
+  

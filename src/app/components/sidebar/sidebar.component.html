@@ -1,0 +1,34 @@
+
+<p-toast></p-toast> 
+
+<div class="sidebar">
+    <h3>Add New Date</h3>
+    <div>
+        <p-calendar [(ngModel)]="newDate.date" [showButtonBar]="true" [showIcon]="true" placeholder="Select a date"></p-calendar>
+        <button 
+          pButton 
+          type="button" 
+          label="Add To-Do List" 
+          icon="pi pi-plus" 
+          (click)="addDate()"
+          class="add-date-button">
+        </button>
+      </div>
+
+    <h3>My To Do List </h3>
+    <ul>
+        <li *ngFor="let date of dates" (click)="selectDate(date._id)" 
+          [ngClass]="{ 'completed': date.status === 'done', 'in-progress': date.status === 'inprogress' }">
+          <div>
+            <span>{{ date.date | date: 'shortDate' }}</span>
+            <div class="progress-container">
+              <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" [ngStyle]="{height: '8px'}">
+                <div class="bg-orange-500 h-full" [ngStyle]="{ width: dateTaskMap[date._id]?.completionPercentage + '%' }"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      
+  </div>
+  
